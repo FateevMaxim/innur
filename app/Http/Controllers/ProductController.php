@@ -179,7 +179,7 @@ class ProductController extends Controller
     public function fileImport(Request $request)
     {
         Excel::import(new TracksImport($request['date']), $request->file('file')->store('temp'));
-        return back();
+        return back()->with('message', 'Трек коды успешно добавлены');
     }
 
     public function result ()
