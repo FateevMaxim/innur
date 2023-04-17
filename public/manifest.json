@@ -10,19 +10,19 @@
     "theme_color": "#a5a5a5",
     "icons": [
         {
-        "src": "/favicons/196x196.jpg",
+        "src": "/favicons/196x196.png",
         "type": "image/png",
         "sizes": "192x192",
             "purpose": "android"
         },
         {
-            "src": "/favicons/512x512.jpg",
+            "src": "/favicons/512x512.png",
             "sizes": "512x512",
             "type": "image/png",
             "purpose": "maskable"
         },
         {
-            "src": "/favicons/512x512.jpg",
+            "src": "/favicons/512x512.png",
             "sizes": "512x512",
             "type": "image/png",
             "purpose": "any"
