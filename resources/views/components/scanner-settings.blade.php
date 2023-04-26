@@ -114,14 +114,18 @@
 
 <script src="{{ asset('js/qrcode.js') }}"></script>
 <script>
-    var qrcode = new QRCode("qrcode", {
-        text: "{{$qr->upload_data}}",
-        width: 170,
-        height: 170,
-        colorDark : "#000000",
-        colorLight : "#ffffff",
-        correctLevel : QRCode.CorrectLevel.H
-    });
+    var upload_data = document.getElementById("qrcode");
+    if(upload_data){
+        var qrcode = new QRCode("qrcode", {
+            text: "{{$qr->upload_data}}",
+            width: 170,
+            height: 170,
+            colorDark : "#000000",
+            colorLight : "#ffffff",
+            correctLevel : QRCode.CorrectLevel.H
+        });
+    }
+
 
     var qrcode = new QRCode("qrcode_clear", {
         text: "{{$qr->clear_data}}",
